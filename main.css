@@ -1,0 +1,92 @@
+ .bodydif {
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body {
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -7vh;
+}
+
+.img1 {
+    width: 60%;
+}
+
+.img2 {
+    width: 40%;
+}
+
+input {
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: #333;
+    outline: none;
+}
+
+.centro1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.centro2 {
+    display: flex;
+    justify-content: center;
+}
+
+.centro3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6vh;
+}
+
+.binario {
+    padding: 50%;
+}
+
+p {
+    margin: 2px;
+}
+
+h5 {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: #333;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    top: 130px;
+    right: 30px;
+    background-color: #333;
+    border: 0;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+

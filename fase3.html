@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ENIGMA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body onload="pontos()">
+    <h5 id="pontuacao"></h5>
+    <button id="botao3" onclick="dica3()"> dica <br> ?</button>
+    <div class="centro3">
+        <img class="img1" src="ventilador.png" alt="fan">
+    </div>
+    <input type="text" onkeydown="verificarResposta3(event)" autocomplete="off" id="resposta" />
+    <script>
+        window.addEventListener("DOMContentLoaded", function(){
+        var condicao3 = sessionStorage.getItem('dica3');
+        if(condicao3 == 1){
+            botao3.style.display = 'none';
+        };
+    });
+
+    function dica3() {
+    window.alert('Números em um "OCTALgono", alfabeto possui ordem númerica, ventilador em inglês. ESSE É MEU PROFESSOR!!!');
+    var botao3 = document.getElementById('botao3');
+    sessionStorage.setItem('dica3', 1);
+    botao3.style.display = 'none';
+    var nota3 = parseInt(sessionStorage.getItem('pp'))
+    nota3 += -5;
+    sessionStorage.setItem('pp', nota3);
+};
+    </script>
+</body>
+</html>

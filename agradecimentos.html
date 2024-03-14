@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>OBRIGADO!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: -7vh;
+}
+</style>
+<script src="main.js">
+</script>
+</head>
+<body>
+    <p>
+        Parabéns, você resolveu o ENIGMA do davis (e companhia) ;p <br> <span id="total"></span></p>
+    <p id="total"></p>
+    <h3 id="total"></h3>
+    <p>
+        <br><br><br>
+        Ajuda com código: <a href="https://chat.openai.com/" target="_blank">https://chat.openai.com/</a> <br>
+        Imagem "QUEM SOU EU?" em ASCII Georgia11 pelo site <a href="https://www.topster.pt/texto-para-ascii/" target="_blank">https://www.topster.pt/texto-para-ascii/</a> <br>
+        Demais imagens por: <a href="https://www.canva.com/pt_br/" target="_blank">https://www.canva.com/pt_br/</a> 
+    </p>
+    <p>
+        <br><br><br>
+        Univasf campus Salgueiro, 10 de março de 2024
+    </p>
+    <script>
+        var nota = parseInt(sessionStorage.getItem('pp'))
+        if(nota === 0) {
+            document.getElementById("total").textContent = " ";
+        } else {
+            document.getElementById("total").textContent = "Sua pontuação foi de " + nota + " Pontos";
+        }
+         
+        window.addEventListener('beforeunload', function(event) {
+    sessionStorage.clear();
+});
+
+    </script>
+</body>
+</html>
