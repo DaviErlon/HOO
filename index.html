@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ENIGMA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='arquivos-do-jogo/main.css'>
+    <script src='arquivos-do-jogo/main.js'></script>
+</head>
+<body  class="bodydif" onload="pontos()">
+        <h5 id="pontuacao"></h5>
+        <button id="botao1" onclick="dica1()"> dica <br> ?</button>
+    <div class="centro1">
+        <img class="img1" src="arquivos-do-jogo/img.jpg" alt="ASCII">
+    </div>
+    <div class='centro1'>
+        <div class="binario">
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>1</p>
+        </div>
+        <div class="binario">
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>0</p>
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+            <p>0</p>
+        </div>
+        <div class="binario">
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>0</p>
+            <p>1</p>
+        </div>
+        <div class="binario">
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>1</p>
+            <p>1</p>
+            <p>0</p>
+        </div>
+        <div class="binario">
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>0</p>
+            <p>0</p>
+            <p>0</p>
+            <p>0</p>
+            <p>1</p>
+        </div>
+        <div class="binario">
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>0</p>
+            <p>1</p>
+            <p>1</p>
+        </div>
+        <div class="binario">
+            <p>0</p>
+            <p>1</p>
+            <p>0</p>
+            <p>0</p>
+            <p>0</p>
+            <p>1</p>
+            <p>1</p>
+            <p>0</p>
+        </div>
+    </div>
+    <input type="text" onkeydown="verificarResposta(event)" id="resposta" autocomplete="off" />
+
+<script>
+    window.addEventListener("DOMContentLoaded", function(){
+        var condicao1 = sessionStorage.getItem('dica');
+        if(condicao1 == 1){
+            botao1.style.display = 'none';
+        };
+    });
+
+    function dica1() {
+    window.alert('Além de ser uma forma de divertida de desenhar palavras e figuras, ASCII também leva uma tabela de símbolos com seu nome.');
+    var botao1 = document.getElementById('botao1');
+    sessionStorage.setItem('dica', 1);
+    botao1.style.display = 'none';
+    sessionStorage.setItem('pp', -2)
+};
+</script>
+
+</body>
+</html>
